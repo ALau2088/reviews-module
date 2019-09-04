@@ -25,7 +25,7 @@ class App extends React.Component {
 // GET request to retrieve reviews data
     $.ajax({
       type: 'GET',
-      url: 'http://localhost:3000/api/reviews',
+      url: 'http://localhost:3003/api/reviews',
       dataType: 'json',
       success: (data) => {
         this.setState({
@@ -126,4 +126,4 @@ class App extends React.Component {
 
 };
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('Reviews'));
